@@ -9,4 +9,10 @@ h2{
   border-radius: 15px;
   text-align: center;
   width: fit-content;
+  height: 900px;
+}
+
+nav{
+  position: sticky !important;
+  top: 0px
 }

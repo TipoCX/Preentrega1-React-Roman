@@ -1,8 +1,8 @@
 interface ItemListContaierProps {
-    greeting: string;
+    children: string;
 }
 
-function ItemListContaier({ greeting }: ItemListContaierProps) {
-    return <h2>{greeting}</h2>;
+function ItemListContaier({ children }: ItemListContaierProps) {
+    return <h2>{children}</h2>;
 }
 export default ItemListContaier;
