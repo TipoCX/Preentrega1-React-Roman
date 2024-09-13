@@ -1,0 +1,12 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+
+h2{
+  padding: 10px;
+  background-color: rgb(182, 182, 182);
+  border-radius: 15px;
+  text-align: center;
+  width: fit-content;
+}
