@@ -1,11 +1,9 @@
-import NavBar from "./components/NavBar";
-import ItemListContaier from "./components/ItemListContainer";
+import MainRouter from "./router/MainRouter";
 
 function App() {
     return (
         <div>
-            <NavBar />
-            <ItemListContaier>Bienvenido a mi tienda</ItemListContaier>
+            <MainRouter />
         </div>
     );
 }
