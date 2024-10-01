@@ -15,10 +15,8 @@ function NavBar({ categories }: CategoriesProps) {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
-                <Link to={"/"}>
-                    <a className="navbar-brand" href="#">
-                        GamerStart
-                    </a>
+                <Link to={"/"} className="navbar-brand">
+                    GamerStart
                 </Link>
                 <button
                     className="navbar-toggler"
@@ -34,14 +32,8 @@ function NavBar({ categories }: CategoriesProps) {
                 <div className="collapse navbar-collapse" id="navbarText">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link to={"/"}>
-                                <a
-                                    className="nav-link active"
-                                    aria-current="page"
-                                    href="#"
-                                >
-                                    Inicio
-                                </a>
+                            <Link className="nav-link active" to={"/"}>
+                                Inicio
                             </Link>
                         </li>
                         <li className="nav-item dropdown">
@@ -59,14 +51,10 @@ function NavBar({ categories }: CategoriesProps) {
                                     return (
                                         <li key={index}>
                                             <Link
+                                                className="dropdown-item"
                                                 to={`/category/${category.slug}`}
                                             >
-                                                <a
-                                                    className="dropdown-item"
-                                                    href="#"
-                                                >
-                                                    {category.name}
-                                                </a>
+                                                <p>{category.name}</p>
                                             </Link>
                                         </li>
                                     );
