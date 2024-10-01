@@ -13,7 +13,12 @@ function CategoryList() {
         });
     }, [slug]);
 
-    return <ItemListContaier products={products} />;
+    return (
+        <div>
+            <h1>{slug}</h1>
+            <ItemListContaier products={products} />
+        </div>
+    );
 }
 
 export default CategoryList;
